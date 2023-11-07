@@ -1,25 +1,25 @@
 public class Giocattolo 
 {
    // Proprietà dell'ogetto 
-   private int id;
    private String nome;
    private double prezzo;
    private int eta;
+   private int quantita;
 
    // Codice progressivo che aumenta ad ogni creazione di un singolo giocattolo 
    // La variabile ed il suo valore è condiviso con tutti gli oggetti, la varibaile 
    // può cambiare di valore 
-   private static int num = 0;
+   private static int id = 0;
 
    // Costruttore 
    // Inizializzo i campi dell'oggetto
-   public Giocattolo(int id, String nome, double prezzo, int eta)
+   public Giocattolo(int id, String nome, double prezzo, int eta, int quantita)
    {
-      this.id = id;
+      this.id++;
       this.nome = nome; 
       this.prezzo = prezzo;
       this.eta = eta;
-      this.num++;
+      this.quantita = quantita;
    }
 
    // Getter e setter dei attributi 
@@ -39,6 +39,10 @@ public class Giocattolo
    {
       return eta;
    }
+   public int getQuantita()
+   {
+      return quantita;
+   }
    public void setId(int id)
    {
       this.id = id;
@@ -54,5 +58,9 @@ public class Giocattolo
    public void setPrezzo(double prezzo)
    {
       this.prezzo = prezzo;
+   }
+   public void setQuantita(int quantita)
+   {
+      this.quantita += quantita;
    }
 }

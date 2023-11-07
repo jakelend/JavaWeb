@@ -1,15 +1,17 @@
 public class Cliente
 {
    // Proprietà dell'ogetto 
-   private int id;
    private String nome;
    private String indirizzoEmail;
+
+   // Id gestito automaticamente 
+   private static int id = 0;
 
    // Costruttore 
    // Inizializzo i campi dell'oggetto
    public Cliente(int id, String nome, String indirizzoEmail)
    {
-      this.id = id;
+      this.id++;
       this.nome = nome;
       this.indirizzoEmail = indirizzoEmail;
    }
