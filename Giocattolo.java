@@ -13,7 +13,7 @@ public class Giocattolo
 
    // Costruttore 
    // Inizializzo i campi dell'oggetto
-   public Giocattolo(int id, String nome, double prezzo, int eta, int quantita)
+   public Giocattolo(String nome, double prezzo, int eta, int quantita)
    {
       this.id++;
       this.nome = nome; 

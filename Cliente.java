@@ -9,7 +9,7 @@ public class Cliente
 
    // Costruttore 
    // Inizializzo i campi dell'oggetto
-   public Cliente(int id, String nome, String indirizzoEmail)
+   public Cliente(String nome, String indirizzoEmail)
    {
       this.id++;
       this.nome = nome;
