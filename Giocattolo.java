@@ -63,4 +63,11 @@ public class Giocattolo
    {
       this.quantita += quantita;
    }
+
+   // Sovrascrivo il toString 
+   @Override
+   public String toString()
+   {
+      return "Nome: " + nome + " Prezzo: " + prezzo + " eta Minima: " +  eta;
+   }
 }

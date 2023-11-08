@@ -112,4 +112,14 @@ public class Inventario
       }
    }
 
+   // Stampo l'inventario 
+   public void stampaInvetario()
+   {
+      for(int i = 0; i < vetGiocattoli.size(); i++)
+      {
+         System.out.println(vetGiocattoli.get(i).getNome() + " " + vetGiocattoli.get(i).getPrezzo() + 
+         " " + vetGiocattoli.get(i).getEta() + " " + vetGiocattoli.get(i).getQuantita()); 
+      }
+   }
+
 }

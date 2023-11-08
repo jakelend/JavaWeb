@@ -1,4 +1,4 @@
-// Classe per gestire le vendite 
+// Classe per memorizzare le vendite effettuate 
 public class Vendita 
 {
    // Memorizzo l'oggetto memorizzato dal cliente 
