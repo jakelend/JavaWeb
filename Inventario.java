@@ -52,7 +52,7 @@ public class Inventario
    }
 
    // Metodo per modificare il giocattolo 
-   public void modificaGiocattolo(String nome, double prezzo, int eta, int quantita)
+   public void modificaGiocattolo(String nome, double prezzo, int eta, String nomeN, double prezzoN, int etaN)
    {
       // Ricerco il giocattolo 
       // Flag controllo del giocattolo se presente 
@@ -66,10 +66,9 @@ public class Inventario
             && vetGiocattoli.get(i).getEta() == eta)
          {
             // Modifico i parametri dell'oggetto
-            vetGiocattoli.get(i).setNome(nome);
-            vetGiocattoli.get(i).setPrezzo(prezzo);
-            vetGiocattoli.get(i).setEta(eta);
-            vetGiocattoli.get(i).setQuantita(quantita);
+            vetGiocattoli.get(i).setNome(nomeN);
+            vetGiocattoli.get(i).setPrezzo(prezzoN);
+            vetGiocattoli.get(i).setEta(etaN);
 
             System.out.println("Giocattolo Modificato");
             flag = false;
@@ -117,8 +116,8 @@ public class Inventario
    {
       for(int i = 0; i < vetGiocattoli.size(); i++)
       {
-         System.out.println(vetGiocattoli.get(i).getNome() + " " + vetGiocattoli.get(i).getPrezzo() + 
-         " " + vetGiocattoli.get(i).getEta() + " " + vetGiocattoli.get(i).getQuantita()); 
+         System.out.println("Nome: " + vetGiocattoli.get(i).getNome() + " Prezzo: " + vetGiocattoli.get(i).getPrezzo() + 
+         " Eta' consigliata: " + vetGiocattoli.get(i).getEta() + " Quantita: " + vetGiocattoli.get(i).getQuantita()); 
       }
    }
 
