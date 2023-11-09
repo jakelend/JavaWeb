@@ -7,6 +7,8 @@ public class Negozio
       // Scanner 
       Scanner input = new Scanner(System.in);
 
+      System.out.println("Saluto dal branch");
+
       // Creazione del cliente 
       Cliente c1 = new Cliente("Luca", "luca@gmail.com");
 
